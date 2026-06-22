@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c7cece;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    /* color: #000; */
+}
+header{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+header nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header nav .navbar {
+display: flex;
+align-items: center;
+}
+
+header nav .navbar .nav-links{
+    margin-left: 20px;
+    
+}
+header nav .navbar .nav-links a{
+    color: #ffa200;
+    transition: all 0.3s ease;
+}
+header nav .navbar .nav-links a:hover{
+    color: #000;
+}
+header nav .dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+   position: absolute;
+   top: calc(100% + 15px);
+   left: 0;
+   opacity: 0;
+   background-color: #cfcfcf;
+   border-radius: 5px;
+   width: 100px;
+   z-index: 1001;
+   padding: 10px;
+   transition: all 0.3s ease;
+   
+}
+.dropdown-menu li{
+    padding: 5px;
+
+}
+ nav .navbar .dropdown-menu  a:hover{
+    color: #000;
+    
+   
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    opacity: 1;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.hero{
+    padding: 5rem 3rem;
+    background-image:linear-gradient(to right,rgba(0,0,255,1),rgba(0,0,255,0) 70%) ,url(img/download.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  
+}
+.hero-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: calc(100vh - 60px);
+
+}
+
+/* .hero-content img{
+    width: 500px;
+} */
+.hero-text h1{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    line-height: 1.6;
+    color: #ffa200;
+    font-weight: 600;
+}
+.hero-text p{
+     font-size: 1rem;
+    margin-bottom: 5px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: white;
+
+}
+
+.hero-text button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    
+ background-color: #1221a5;
+   color: #c7cece;
+    
+    
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+    
+    
+}
+
+.hero-text button:hover{
+  border: 1.5px solid black;
+  outline: none;
+   background-color: transparent;
+    color: #000;
+    
+    
+}
