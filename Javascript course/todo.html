@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-task-manager</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 80vh;
+        }
+        .container{
+            background-color: #a76aac;
+            max-width: 300px;
+            width: 100%;
+            padding: 40px 60px;
+            border-radius: 8px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #task-input{
+            padding: 10px 25px;
+            border: none;
+            border-radius: 2px;
+        }
+        button{
+            padding: 10px 15px;
+             border: none;
+            border-radius: 2px;
+            background-color: #19d225;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h1>My Task</h1>
+
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="Add a new Task.." required>
+        <button type="submit">Add</button>
+    </form>
+    <ul id="task-list"></ul>
+</div>
+
+    <script>
+        const form = document.getElementById('task-form')
+        const input = document.getElementById('task-input')
+        const taskList = document.getElementById('task-list')
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            addTask(input.value);
+            input.value = ''
+        });
+
+        function addTask(text) {
+            const list = document.createElement("li");
+
+            list.innerHTML = `<span> ${text}</span> <button class='delete-btn'> X </button>`;
+
+            taskList.appendChild(list);
+
+            list.querySelector('.delete-btn').addEventListener("click", function(){
+                list.remove()
+            })
+
+        }
+    </script>
+</body>
+
+</html>

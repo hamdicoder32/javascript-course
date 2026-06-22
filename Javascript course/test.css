@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 100px auto;
+}
+
+h1{
+    color: #020101;
+    font-size: 3rem;
+    animation: fadein 2s ease;
+    /* opacity: 0; */
+}
+
+@keyframes fadein{
+    from{
+       transform: scale(0.4);
+       opacity: 0.4;
+    }
+    to{
+        transform: translateX(1.1);
+        opacity: 1;
+    }
+}
