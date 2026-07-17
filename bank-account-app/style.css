@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  min-height: 100vh;
+}
+.welcome {
+  background-color: #fff;
+  padding: 32px 48px 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  max-width: 380px;
+  width: 100%;
+}
+.welcome:hover,
+.account-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  gap: 8px;
+}
+.logo span {
+  font-size: 24px;
+}
+.logo h1 {
+  color: #030308;
+  font-size: 24px;
+  font-weight: 700;
+}
+.welcome p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #080890;
+}
+.create-btn {
+  padding: 8px 24px;
+  background-color: #1616ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+.create-btn:hover,
+#createBtn:hover,
+#continuebtn:hover,
+#depositbtn:hover,
+#depositBtn:hover, #cancel-btn:hover{
+  background-color: #0404a3;
+  cursor: pointer;
+}
+
+/* craete account screen */
+.account-form {
+  background-color: #fff;
+  padding: 32px 48px 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  max-width: 450px;
+  width: 100%;
+  display: none;
+}
+
+.account-form h2, .transactions h2 {
+  color: #030308;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 12px;
+}
+form .group-form {
+  display: flex;
+  /* align-items: start; */
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+form .group-form input {
+  padding: 4px 16px;
+  background-color: #dddddd;
+  border-radius: 4px;
+}
+#createBtn,
+#continuebtn {
+  padding: 8px 16px;
+  background-color: #1616ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+#cancelbtn {
+  padding: 8px 16px;
+  background-color: #ff7700;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+  cursor: pointer;
+}
+#cancelbtn:hover,
+#cancelBtn:hover {
+  background-color: #ff7801;
+}
+
+/* <!-- succes page --> */
+.success {
+  background-color: #fff;
+  padding: 48px 24px 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  max-width: 450px;
+  width: 100%;
+  display: none;
+}
+.success h2,
+.deposit-page h2 , .withdraw-page h2{
+  color: #030308;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.success p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #030308;
+}
+.success p span {
+  color: #1616ff;
+  font-size: 18px;
+  font-weight: 500;
+}
+#continuebtn {
+  padding: 8px 16px;
+  background-color: #1616ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+/* <!-- dashbord --> */
+.dashboard {
+  background-color: #fff;
+  padding: 32px 24px 48px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  max-width: 350px;
+  width: 100%;
+  display: none;
+}
+.dashboard p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #030308;
+}
+.dashboard span {
+  color: #0e0ed0;
+}
+.balance {
+  color: #0e0ed0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: start; */
+  gap: 12px;
+  width: 100%;
+}
+.btn button {
+  padding: 8px 16px;
+  background-color: #1616ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+  cursor: pointer;
+}
+#withdrawbtn , #withdrawalBtn {
+  background-color: #ff8923;
+  cursor: pointer;
+}
+#withdrawbtn:hover , #withdrawalBtn:hover {
+  background-color: #ff5e00;
+}
+
+
+/* <!-- deposit --> */
+.deposit-page , .withdraw-page{
+  background-color: #fff;
+  padding: 32px 24px 48px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  max-width: 350px;
+  width: 100%;
+  display: none;
+}
+
+.deposit-form, .withdraw-form {
+  display: flex;
+  gap: 8px;
+}
+.deposit-form input , .withdraw-form input {
+  padding: 4px 16px;
+  background-color: #dddddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.deposit-page .Btn button , .withdraw-page .Btn button {
+  padding: 8px 16px;
+  background-color: #1616ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+  cursor: pointer;
+}
+#cancelBtn {
+  background-color: #030308;
+  cursor: pointer;
+}
+.error-msg{
+  color: #fc5812;
+  margin-top: 8px;
+  text-align: center;
+}
+.transaction-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#deleteBtn{
+  background-color: #f4946b;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#deleteBtn:hover{
+  background-color: #030308;
+}
