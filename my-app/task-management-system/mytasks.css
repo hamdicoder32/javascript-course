@@ -1,0 +1,58 @@
+
+
+
+:root {
+  --primary-color: #6200ea;
+  --primary-hover: #7c4dff;
+  --light-indigo: #ede7f6;
+  --ligth-blue: #7e57c2;
+  --meduim: #ffe0b2;
+  --orange: #ff9800;
+  --low: #ffccbc;
+  --red: #ff5722;
+  --text: #212121;
+  --white: #fff;
+  --bg: #eeeeee;
+  --grey: #424242;
+}
+
+/* tasks page  start*/
+.tasks-hero{
+    padding: 1rem 0;
+}
+.tasks-hero .task-content{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: var(--light-indigo);
+    border-radius: 1rem;
+    padding: 0 2rem;
+}
+.task-content .tasks-left{
+    flex: 1;
+}
+.task-content .tasks-left h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+.task-content .tasks-left p{
+    color: var(--grey);  
+}
+
+.task-content img{
+    max-width: 400px;
+    width: 90%;
+}
+
+/* statistics */
+.statistics{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 1rem;
+}
+.statistics .total-tasks{
+    background-color: var(--meduim);
+}

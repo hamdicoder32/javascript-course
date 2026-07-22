@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- google icons linkd -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <!-- font awosome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <i class="fa-solid fa-building-columns"></i>
+          <h2>MY Bank</h2>
+        </div>
+        <nav class="links">
+          <a href="dashboard.html" class="active">
+            <span
+              ><span class="material-symbols-outlined">dashboard</span></span
+            >
+
+            Dashboard</a
+          >
+
+          <a href="dashboard.html">
+            <span class="deposit-icon">
+              <i class="fa-solid fa-circle-down"></i
+            ></span>
+            Deposit</a
+          >
+
+          <a href="dashboard.html">
+            <span class="withdraw-icon"
+              ><i class="fa-solid fa-circle-up"></i
+            ></span>
+            Withdraw</a
+          >
+
+          <a href="dashboard.html">
+            <span class="transactions-icon"
+              ><span class="material-symbols-outlined">casino</span></span
+            >
+            Transactions</a
+          >
+
+          <a class="Logout"
+            ><span><span class="material-symbols-outlined">logout</span></span
+            >Logout</a
+          >
+        </nav>
+      </aside>
+
+      <!-- main content -->
+      <main class="main-content">
+        <span id="go-home">Go Back <i class="fa-solid fa-arrow-left"></i> </span>
+        <div class="main-top">
+          <div class="welcome-info">
+            <h1 class="name">Welcome, Alex 👋</h1>
+            <p class="email">Alex@gmail.com</p>
+          </div>
+          <div class="bank-number">
+            <span>Account Number</span>
+            <div class="number">
+              <p class="account-NO">777999</p>
+              <span class="material-symbols-outlined">stack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-middle">
+          <div class="balance-info">
+            <p>Current Balance</p>
+            <span class="balance">$6,000,790</span>
+          </div>
+
+          <div class="quick-action">
+
+            <div class="deposit-quick">
+
+              <div class="details">
+                <span class="material-symbols-outlined icon">local_atm</span>
+                <div class="text">
+                  <h4>Deposit Money</h4>
+                  <p>Add money to your account.</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined">chevron_right</span>
+
+            </div>
+
+            <div class="withdraw-quick">
+              <div class="details">
+                <span class="material-symbols-outlined icon" >attach_money</span>
+                <div class="text">
+                  <h4>Withdraw Money</h4>
+                  <p>Withdraw Money from the account.</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined">chevron_right</span>
+
+            </div>
+          </div>
+        </div>
+       <!-- transactions -->
+        <div class="transaction-table">
+
+          <div class="header">
+            <h2>Recent Transactions</h2>
+            <button type="button" id="viewbtn">View All</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Balance</th>
+
+              </tr>
+            </thead>
+            <tbody id="transactions">
+
+              <tr>
+                <td> <span class="down-icon" ><i class="fa-solid fa-arrow-down"></i></span> depsit</td>
+                <td>+ 500</td>
+                <td>may 13,2026</td>
+                <td>$500</td>
+              </tr>
+
+              <tr>
+                <td> <span class="up-icon"><i class="fa-solid fa-arrow-up"></i></span> Withdraw</td>
+                <td>+500</td>
+                <td>may 13,2026</td>
+                <td>$500</td>
+              </tr>
+
+              <tr>
+                <td>depsit</td>
+                <td>+500</td>
+                <td>may 13,2026</td>
+                <td>$500</td>
+              </tr>
+
+              <tr>
+                <td>depsit</td>
+                <td>+500</td>
+                <td>may 13,2026</td>
+                <td>$500</td>
+              </tr>
+
+              <tr>
+                <td>depsit</td>
+                <td>+500</td>
+                <td>may 13,2026</td>
+                <td>$500</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+      </main>
+    </div>
+
+    <!-- js -->
+    <script src="./app.js" defer></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

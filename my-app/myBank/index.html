@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBank</title>
+       <!-- google icons linkd -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
+     <!-- font awosome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- css stylesheet link -->
+       <link rel="stylesheet" href="html/style.css">
+</head>
+<body>
+  <main class="contianer">
+    <!-- welcome page start -->
+    <section class="welcome-page">
+
+      <div class="welcome-massage">
+        
+        <div class="logo">
+          <i class="fa-solid fa-building-columns"></i>
+          <h1>MY BANK</h1>
+        </div>
+
+        <div class="welcome-text">
+          <h3>Welcome to My Bank</h3>
+          <p>Your trusted partner </br> in your financial journey.</p>
+        </div>
+        <img src="img/wallet.png" alt="wallet">
+        <button type="button" id="createbtn">Create Account <i class="fa-solid fa-arrow-right"></i></button>
+        
+      </div>
+
+    </section>
+
+    <!-- welcome page end -->
+
+    <!-- form page start -->
+     <section class="form-page">
+      <div class="form-content">
+      <div class="form-top">
+        <h2>Create your account</h2>
+        <p>Fill in your details to get started.</p>
+      </div>
+    
+      <form class="form">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <span class="user-icon"><i class="fa-solid fa-user"></i> <input type="text" id="name" placeholder="Enter your full name" required></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <span class="email-icon"><i class="fa-solid fa-envelope"></i> <input type="email" id="email" placeholder="Enter your full name" required></span>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" id="createBtn">Create Account <i class="fa-solid fa-arrow-right"></i></button>
+          <button type="button" id="cancelbtn">Cancel</button>
+        </div>
+
+        <div class="massage">
+          <span class="material-symbols-outlined">security</span>
+          <p>Your information is secure with us.We never share your details.</p>
+        </div>
+
+      </form>
+</div>
+     </section>
+    <!-- form page end -->
+
+    <!-- succesful page start -->
+     <section class="success-page">
+
+      <div class="success-content">
+
+        <div class="success-masage">
+          <h2>Account Created Seccessfully!🎉</h2>
+          <p>Your account has been created.</p>
+          <span>You can now access your dashboard.</span>
+        </div>
+
+        <div class="account-number">
+          <span>Your Account Number</span>
+          <p id="account-number">333333</p>
+        </div>
+
+        <button type="button" id="continuebtn">Continue to Dashboard <i class="fa-solid fa-arrow-right"></i></button>
+
+      </div>
+
+     </section>
+    <!-- succesful page end -->
+  </main>
+ 
+  <!-- js -->
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
